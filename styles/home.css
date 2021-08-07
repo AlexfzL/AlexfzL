@@ -1,0 +1,47 @@
+header {
+    background-image: url("../images/watercolor6.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+main {
+    background-color: var(--main-bg-color);
+}
+
+#greeting {
+    font-size: 2em;
+}
+
+.sub-card {
+    width: 70%;
+    margin: 40px auto;
+
+}
+
+.use-case {
+    font-style: italic;
+}
+
+.page-intro a:hover{
+    text-decoration: underline;
+}
+
+.content-card {
+    color: black;
+    background-color: #a6cfd2;
+}
+
+.content-card > *{
+    animation-duration: 2s;
+    animation-name: fadein;
+}
+
+@keyframes fadein {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}

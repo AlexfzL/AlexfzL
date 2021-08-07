@@ -1,0 +1,106 @@
+@font-face {
+    font-family: "header-font";
+    src: url(../fonts/ZenTokyoZoo-Regular.ttf);
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "text-font";
+    src: url(../fonts/roboto/RobotoSlab-Regular.ttf);
+    font-display: swap;
+}
+
+:root {
+    --nav-bg-color: rgba(0, 0, 0, 0.8);
+    --main-bg-color: #ffffff;
+    --section-bg-color: rgba(0, 0, 0, 0.9);
+    --link-color: #000000;
+    --text-color: #fff;
+    --nav-hover-color: rgba(255, 255, 255, 0.8);
+}
+
+* {
+    margin: 0;
+    text-decoration: none;
+    list-style-type: none;
+    font-family: 'text-font', 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    box-sizing: border-box;
+}
+
+a {
+    color: var(--link-color);
+}
+
+nav {
+    display: flex;
+    height: 50px;
+    background-color: var(--nav-bg-color);
+}
+
+nav a {
+    flex: 1;
+    text-align: center;
+    line-height: 50px;
+    font-size: 1.2em;
+    font-family: 'text-font', 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: var(--nav-hover-color);
+    transition: color 0.2s;
+}
+
+nav a:hover {
+    color: var(--text-color);
+}
+
+/* navbar will become vertical aligned in mobile view */
+@media (max-width:600px){
+    nav{
+        height: auto;
+        flex-direction: column;
+    }
+}
+
+
+header {
+    padding: 100px 15px;
+}
+
+header h1 {
+    text-align: center;
+    font-family: 'header-font', 'Courier New', Courier, monospace;
+    font-weight: 400;
+}
+
+header .page-intro {
+    margin: 20px auto;
+    width: 70%;
+}
+
+.content-card {
+    margin: 0px auto 20px;
+    padding: 30px 30px;
+    color: var(--text-color);
+    background-color: var(--section-bg-color);
+}
+
+.content-card h2, .content-card h3, .content-card p, .content-card li {
+    text-align: center;
+}
+
+.content-card a {
+    margin-left: auto;
+    margin-right: 0;
+}
+
+.content-card a:hover {
+    text-decoration: underline;
+}
+
+.content-card li {
+    margin-bottom: 10px;
+}
+
+footer {
+    margin: 10px auto;
+    width: 75%; 
+    border-top: 2px solid rgb(0 0 0 / 21%);
+}
